@@ -10,8 +10,10 @@ pub enum GameError {
     InvalidClaim,
     #[msg("Invalid Reward Vault to receive")] // 6003
     InvalidRewardVault,
-    #[msg("Insufficient Reward SOL Balance")] // 6004
+    #[msg("Invalid Loyalty Wallet")] // 6004
+    InvalidLoyaltyWallet,
+    #[msg("Insufficient Reward SOL Balance")] // 6005
     InsufficientRewardVault,
-    #[msg("Insufficient User SOL Balance")] // 6005
+    #[msg("Insufficient User SOL Balance")] // 6006
     InsufficientUserBalance,
 }

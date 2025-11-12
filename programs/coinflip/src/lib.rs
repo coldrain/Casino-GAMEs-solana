@@ -100,7 +100,7 @@ pub mod coinflip {
 
         require!(
             ctx.accounts.loyalty_wallet.to_account_info().key() == global_authority.loyalty_wallet,
-            GameError::InvalidRewardVault
+            GameError::InvalidLoyaltyWallet
         );
         
         // 3% of deposit Sol
